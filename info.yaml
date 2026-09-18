@@ -1,6 +1,6 @@
 # Tiny Tapeout project information
 project:
-  title:        "circuitli C061618G2TR"      # Project title
+  title:        "Circuitli C061618G2TR"      # Project title
   author:       "circuitli"      # Your name
   discord:      ""      # Your discord username, for communication and automatically assigning you a Tapeout role (optional)
   description:  "A triple redundant clockless MMU module with an integrated anti-glitch filter network for 8-bit processors with a 16-bit address bus."
