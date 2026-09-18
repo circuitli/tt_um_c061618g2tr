@@ -112,7 +112,6 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           RUN_ID: ${{ steps.resolve-id.outputs.run_id }}
         run: |
-          mkdir -p macros/
           echo "Checking for macro artifacts in run: $RUN_ID..."
           
           # Attempt to download the artifact via GitHub CLI; suppress 404 failure code
