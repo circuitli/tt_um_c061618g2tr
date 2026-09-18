@@ -1,3 +1,6 @@
 [submodule "deps/c061618g2"]
 	path = deps/c061618g2
 	url = https://github.com/circuitli/c061618g2
+[submodule "c061618g2tr"]
+	path = deps/c061618g2tr
+	url = https://github.com/circuitli/c061618g2tr
