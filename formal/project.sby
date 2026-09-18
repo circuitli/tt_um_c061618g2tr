@@ -85,7 +85,7 @@ workspace_clean = workspace_root.replace("\\", "/")
 # The output() method natively injects the commands back into the SBY engine queue
 output(f"read -sv {define_flag} {workspace_clean}/../deps/c061618g2/formal/module/c061618g2_formal.sv")
 #output(f"read -sv {define_flag} formal/module/c061618g2_formal.sv")
-output(f"read -sv {define_flag} {workspace_clean}/module/c061618g2tr_formal.sv")
+output(f"read -sv {define_flag} {workspace_clean}/project_formal.sv")
 --pycode-end--
 # =============================================================================
 
@@ -104,8 +104,8 @@ output(f"read -sv {define_flag} {workspace_clean}/module/c061618g2tr_formal.sv")
 # as ideal structural blackboxes, bypassing the PDK file completely.
 # -------------------------------------------------------------------------
 #hierarchy -generate sg13g2_* O:X O:Y O:Q I:A I:B I:D I:G I:S I:I I:A0 I:A1
-##hierarchy -top c061618g2tr
-hierarchy -top c061618g2tr -purge_lib
+##hierarchy -top tt_um_c061618g2tr
+hierarchy -top tt_um_c061618g2tr -purge_lib
 proc
 
 # Breaks the latch feedback loops in SBY tool memory without hacking the source code
@@ -196,8 +196,8 @@ select -clear
 
 # Standard formal elaboration mapping without port splitting
 #flatten
-#prep -top c061618g2tr -nordff
-prep -top c061618g2tr
+#prep -top tt_um_c061618g2tr -nordff
+prep -top tt_um_c061618g2tr
 ##chformal -early
 ##opt_clean
 
@@ -265,4 +265,6 @@ formal/module/mueller_inertial_delay_filter_formal.sv       ../deps/c061618g2/fo
 formal/module/mueller_inertial_delay_filter_bank_formal.sv  ../deps/c061618g2/formal/module/mueller_inertial_delay_filter_bank_formal.sv
 formal/module/c061618g2_formal.sv                           ../deps/c061618g2/formal/module/c061618g2_formal.sv
 formal/module/c061618g2tr_formal.sv                         module/c061618g2tr_formal.sv
+formal/project_formal.sv                                    project_formal.sv
+
 

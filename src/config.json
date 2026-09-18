@@ -11,7 +11,7 @@
 
   "//": "Here are some of the variables you may want to change:",
 
-  "DESIGN_NAME": "c061618g2tr",
+  "DESIGN_NAME": "tt_um_c061618g2tr",
   "_VERBOSE": 2,
   "_LOG_LEVEL": "DEBUG",
 
@@ -45,15 +45,15 @@
           "max": [ "dir::../macros/spef/c061618g2.nom.spef" ]
         },
         "instances": {
-          "actual_design/u_c061618g2_1": {
+          "u_c061618g2_1": {
             "location": [ "expr::($macro_x)", "expr::($macro_y)" ],
             "orientation": "N"
           },
-          "actual_design/u_c061618g2_2": {
+          "u_c061618g2_2": {
             "location": [ "expr::($macro_x)", "expr::($macro_y - $macro_height)" ],
             "orientation": "N"
           },
-          "actual_design/u_c061618g2_3": {
+          "u_c061618g2_3": {
             "location": [ "expr::($macro_x)", "expr::($macro_y - (2.0 * $macro_height))" ],
             "orientation": "N"
           }
@@ -63,9 +63,9 @@
     "RT_MAX_LAYER": "Metal4",
     "PDN_HORIZONTAL_LAYER": "Metal5",
     "PDN_MACRO_CONNECTIONS": [
-      "actual_design/u_c061618g2_1 VPWR VGND vdd vss",
-      "actual_design/u_c061618g2_2 VPWR VGND vdd vss",
-      "actual_design/u_c061618g2_3 VPWR VGND vdd vss"
+      "u_c061618g2_1 VPWR VGND vdd vss",
+      "u_c061618g2_2 VPWR VGND vdd vss",
+      "u_c061618g2_3 VPWR VGND vdd vss"
     ],
 
     "PDN_HWIDTH": 0.96,
