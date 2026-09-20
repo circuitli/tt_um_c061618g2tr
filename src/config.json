@@ -31,7 +31,7 @@
   "// -------------------------------------------------------------------------": "",
   "pdk::ihp-sg13g2": {
     "VERILOG_DEFINES": [ "IHP_SG13G2" ],
-    "macro_x": 13.44,
+    "macro_x": 14.4,
     "macro_y": 102.06,
     "macro_height": "expr::(3.78 * 12)",
     "MACROS": {
@@ -96,7 +96,7 @@
     "RUN_ANTENNA_REPAIR": true,
     "RUN_HEURISTIC_DIODE_INSERTION": true,
 
-    "FP_MACRO_HORIZONTAL_HALO": 2.52,
+    "FP_MACRO_HORIZONTAL_HALO": 3.36,
     "FP_MACRO_VERTICAL_HALO": 3.78,
     "FP_PRUNE_THRESHOLD": 0
   },
