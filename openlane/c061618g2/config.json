@@ -65,8 +65,8 @@
     "VDD_NETS": [ "vdd" ],
     "GND_NETS": [ "vss" ],
 
-    "FP_CORE_UTIL": 55,
-    "PL_TARGET_DENSITY_PCT": 65,
+    "FP_CORE_UTIL": 65,
+    "PL_TARGET_DENSITY_PCT": 75,
     "DIE_AREA": [ 0.0, 0.0, 110.40, 37.80 ],
     "CORE_AREA": [ 0.0, 0.0, 110.40, 37.80 ],
     "_____DIE_AREA": [ 0.0, 0.0, 121.44, 37.80 ],
