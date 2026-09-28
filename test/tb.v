@@ -36,24 +36,9 @@ module tb ();
       ui_in  = 8'h00;   // Baseline address lines grounded to $0000
   end
 
- /*
-`ifdef GL_TEST
-  // Supply rails required strictly for gate-level netlist simulations
-  supply1 VPWR;
-  supply0 VGND;
-`endif
- */
-
   // Instantiate the wrapper name that the automated script injected into the netlist
   // (Change 'tt_um_c061618g2_bypass' to match the top_module name in THE info.yaml)
   tt_um_c061618g2tr user_project (
-
-/*
-`ifdef GL_TEST
-      .VPWR(VPWR),
-      .VGND(VGND),
-`endif
- */
       .ui_in  (ui_in),    // Dedicated inputs
       .uo_out (uo_out),   // Dedicated outputs
       .uio_in (uio_in),   // Bidirectional IOs: Input path
